@@ -1,12 +1,12 @@
 # A basic program to chain a prompt and a call to LLM
 Observe the trace of the LLM call in Langsmith
 
-- Env Var Settings
-- Run the python Program
-- Observe the trace in Langsmith
-- Troubleshoot
+- [Env Settings](#Env-Settings)
+- [Run the LLM Application]#Run-the-LLM-Application)
+- [Observe the trace in Langsmith](#Observe-the-trace-in-Langsmith)
+- [Troubleshoot](#Troubleshoot)
 
-## Env Variables
+## Env Settings
 ```
 > . ./basic_chain.env
 
@@ -16,7 +16,7 @@ LANGCHAIN_TRACING_V2=true
 LANGCHAIN_PROJECT=my-app
 LANGCHAIN_API_KEY=lsv2_sk_***************
 ```
-## Run the Python Program
+## Run the LLM Application
 ```
 > python3 ./basic_chain.py
 Kafka is used for building real-time data pipelines and streaming applications. It allows for the processing and analyzing of high-throughput data streams, enabling the integration of data from multiple sources and facilitating event-driven architectures.
