@@ -18,4 +18,4 @@ LANGCHAIN_API_KEY=lsv2_sk_***************
 Kafka is used for building real-time data pipelines and streaming applications. It allows for the processing and analyzing of high-throughput data streams, enabling the integration of data from multiple sources and facilitating event-driven architectures.
 ```
 ## Observe the trace in LangSmith
-[![Check Table](../images/basic_chain/basic_chain.png)]()
+[![Check Table](../images/basic_chain.png)]()
