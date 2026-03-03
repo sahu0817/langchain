@@ -1,4 +1,4 @@
-# A basic python program to chain a prompt and a call to LLM
+# A basic program to chain a prompt and a call to LLM
 Observe the trace of the LLM call in Langsmith
 
 - Env Var Settings
