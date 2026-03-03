@@ -21,8 +21,8 @@ Whether you are a beginner looking to make your first LLM call or an experienced
 ### Python
 - Install python >=3.10
 - Install python modules: langsmith, langchain, langchian-openai, fastmcp
-  
-```pip3 install langsmith langchain, langchain-openai fastmcp```
+  -   ```pip3 install langsmith langchain, langchain-openai fastmcp```
+
 
 
 
