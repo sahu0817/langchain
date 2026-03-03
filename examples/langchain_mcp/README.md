@@ -25,6 +25,7 @@ In this example the agent imports the MCP Server as a python module.
 You can wire the MCP server into an MCP host (Claude Desktop, Cursor, etc.) 
 
 This depends on your FastMCP version and transport (stdio / HTTP / SSE), but the important part is:
+
 `lookupByKey` is now a first‑class MCP tool implemented once in mcp_backend.lookup_order().
 
 ## LangChain Agent
