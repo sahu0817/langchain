@@ -18,5 +18,12 @@ LANGCHAIN_API_KEY=lsv2_sk_***************
 > python3 ./langchain_mcp.py
 The order 'ORD-1001' belongs to the customer Alice and has a total amount of $42.50.
 ```
+
+## MCP Server
+You can wire the MCP server into an MCP host (Claude Desktop, Cursor, etc.) 
+
+This depends on your FastMCP version and transport (stdio / HTTP / SSE), but the important part is:
+`lookupByKey` is now a first‑class MCP tool implemented once in mcp_backend.lookup_order().
+
 ## Observe the trace in LangSmith
 [![Check Table](../images/langchain_mcp.png)]()
