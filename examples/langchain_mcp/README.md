@@ -1,12 +1,7 @@
-# A LLM application that 
+# An LLM application to 
 - Creates a langchain agent 
 - Creates a context with MCP tool calling
 - Enriches the prompt  and invoke a LLM
-
-Observe the trace of the LLM call in Langsmith
-
-- Env Var Settings
-- Run the python Program
 - Observe the trace in Langsmith
 
 ## Env Variables

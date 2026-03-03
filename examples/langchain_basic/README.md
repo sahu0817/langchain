@@ -23,9 +23,9 @@ Kafka is used for building real-time data pipelines and streaming applications. 
 ```
 ## Observe the trace in LangSmith
 #### Top Level Dashboard
-[![Check Table](../images/basic_chain.png)]()
+[![Check Table](../images/langchain_basic.png)]()
 #### Click on the row for a granular view of latency, tokens, cost
-[![Check Table](../images/basic_chain_2.png)]()
+[![Check Table](../images/langchain_basic_2.png)]()
 
 ## Troubleshoot
 Either you used up all the credits with your free tier account in OpenAI OR you are firing too many calls in a short span.
