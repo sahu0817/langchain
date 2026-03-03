@@ -20,6 +20,7 @@ Whether you are a beginner looking to make your first LLM call or an experienced
   - Service Account with a scope of workspace (isolated to team / project )
 ### Python
 - Install python >=3.10
-- Install python modules: langsmith, langchian-openai
-```pip3 install langsmith langchain-openai```
+- Install python modules: langsmith, langchian-openai, fastmcp
+```pip3 install langsmith langchain-openai fastmcp```
+
 
