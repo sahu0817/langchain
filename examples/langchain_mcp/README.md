@@ -20,6 +20,8 @@ The order 'ORD-1001' belongs to the customer Alice and has a total amount of $42
 ```
 
 ## MCP Server
+In this example the agent imports the MCP Server as a python module.
+
 You can wire the MCP server into an MCP host (Claude Desktop, Cursor, etc.) 
 
 This depends on your FastMCP version and transport (stdio / HTTP / SSE), but the important part is:
