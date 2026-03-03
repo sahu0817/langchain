@@ -7,7 +7,8 @@ Observe the trace of the LLM call in Langsmith
 
 ## Env Variables
 ```
-> . ./set.env
+> . ./basic_chain.env
+
 > env | egrep "LANGCHAIN|OPENAI"
 OPENAI_API_KEY=sk-svcacct-**************
 LANGCHAIN_TRACING_V2=true
