@@ -2,7 +2,7 @@
 Observe the trace of the LLM call in Langsmith
 
 - [Env Settings](#Env-Settings)
-- [Run the LLM Application]#Run-the-LLM-Application)
+- [Run the LLM Application](#Run-the-LLM-Application)
 - [Observe the trace in Langsmith](#Observe-the-trace-in-Langsmith)
 - [Troubleshoot](#Troubleshoot)
 
