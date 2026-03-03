@@ -8,3 +8,11 @@ The primary goal of this project is to demystify core LangChain concepts through
 
 Whether you are a beginner looking to make your first LLM call or an experienced developer aiming to integrate advanced agents and RAG (Retrieval-Augmented Generation) systems, this repo has something for you.
 
+## PreRequisites
+
+### LLM
+- Create an Account with a LLM Provider of your choice e.g OpenAI, Gemini, Claude
+- Create a API Key
+### LangChain
+- Create an Account with LangChain
+- Create a API Key in LangChain ( workspace scoped )
