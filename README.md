@@ -15,4 +15,6 @@ Whether you are a beginner looking to make your first LLM call or an experienced
 - Create a API Key
 ### LangChain
 - Create an Account with LangChain
-- Create a API Key in LangChain ( workspace scoped )
+- Create a API Key in LangChain 
+  - Service Account with a scope of workspace (isolated to team / project )
+
