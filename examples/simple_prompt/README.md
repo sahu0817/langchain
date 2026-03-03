@@ -22,7 +22,10 @@ LANGCHAIN_API_KEY=lsv2_sk_***************
 Kafka is used for building real-time data pipelines and streaming applications. It allows for the processing and analyzing of high-throughput data streams, enabling the integration of data from multiple sources and facilitating event-driven architectures.
 ```
 ## Observe the trace in LangSmith
+#### Top Level Dashboard
 [![Check Table](../images/basic_chain.png)]()
+#### Click on the row for a granular view of latency, tokens, cost
+[![Check Table](../images/basic_chain_2.png)]()
 
 ## Troubleshoot
 Either you used up all the credits with your free tier account in OpenAI OR you are firing too many calls in a short span.
