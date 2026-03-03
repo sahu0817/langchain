@@ -27,5 +27,12 @@ You can wire the MCP server into an MCP host (Claude Desktop, Cursor, etc.)
 This depends on your FastMCP version and transport (stdio / HTTP / SSE), but the important part is:
 `lookupByKey` is now a first‑class MCP tool implemented once in mcp_backend.lookup_order().
 
+## LangChain Agent
+Key points:
+
+No duplication of business logic: lookup_order() in the mock mcp_backend.py is the single source of truth.
+FastMCP: wraps that function as a tool (lookupByKey) for MCP‑speaking clients.
+LangChain: wraps the same function as a StructuredTool and gives it to a ReAct‑style agent.
+
 ## Observe the trace in LangSmith
 [![Check Table](../images/langchain_mcp.png)]()
