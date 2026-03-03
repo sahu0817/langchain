@@ -10,6 +10,7 @@ Whether you are a beginner looking to make your first LLM call or an experienced
 
 ## PreRequisites
 
+
 ### LLM
 - Create an Account with a LLM Provider of your choice e.g OpenAI, Gemini, Claude
 - Create a API Key
@@ -17,4 +18,8 @@ Whether you are a beginner looking to make your first LLM call or an experienced
 - Create an Account with LangChain
 - Create a API Key in LangChain 
   - Service Account with a scope of workspace (isolated to team / project )
+### Python
+- Install python >=3.10
+- Install python modules: langsmith, langchian-openai
+```pip3 install langsmith langchain-openai```
 
