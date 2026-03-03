@@ -1,4 +1,6 @@
-# A basic python program to chain a prompt to an LLM call and observe the traces in Langsmith
+# A basic python program to chain a prompt and a call to LLM
+Observe the trace of the LLM call in Langsmith
+
 - Env Var Settings
 - Run the python Program
 - Observe the trace in Langsmith
