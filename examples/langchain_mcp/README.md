@@ -1,4 +1,8 @@
-# A basic program to chain a prompt and a call to LLM
+# A LLM application that 
+- Creates a langchain agent 
+- Creates a context with MCP tool calling
+- Enriches the prompt  and invoke a LLM
+
 Observe the trace of the LLM call in Langsmith
 
 - Env Var Settings
@@ -16,8 +20,8 @@ LANGCHAIN_API_KEY=lsv2_sk_***************
 ```
 ## Run the Python Program
 ```
-> python3 ./basic_chain.py
-Kafka is used for building real-time data pipelines and streaming applications. It allows for the processing and analyzing of high-throughput data streams, enabling the integration of data from multiple sources and facilitating event-driven architectures.
+> python3 ./langchain_mcp.py
+The order 'ORD-1001' belongs to the customer Alice and has a total amount of $42.50.
 ```
 ## Observe the trace in LangSmith
-[![Check Table](../images/basic_chain.png)]()
+[![Check Table](../images/langchain_mcp.png)]()
