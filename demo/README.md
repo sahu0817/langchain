@@ -1,4 +1,5 @@
-## langsmith-frontend
+## langsmith platform services
+### langsmith-frontend
 
 Role: UI and HTTPS entrypoint for LangSmith.
 
@@ -8,7 +9,7 @@ Role: UI and HTTPS entrypoint for LangSmith.
 
 Think of this as “the thing behind your load balancer” that users directly hit.
 
-## langsmith-backend
+### langsmith-backend
 
 Role: Read / query API and general app logic. Primarily responsible for serving data back to the UI and SDKs:
 
