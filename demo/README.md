@@ -90,8 +90,30 @@ Role: Primary relational database.
 
 Role: Cache + job broker.
 
-- Acts as the message broker for trace ingestion and background jobs:
-- platform-backend and other services enqueue work.
-- langsmith-ingest-queue / langsmith-queue consume from Redis and execute it. 
+- Serves as the message broker between producers and workers:
+  - langsmith-platform-backend (and possibly langsmith-backend or others) enqueue jobs.
+  - langsmith-ingest-queue and langsmith-queue consume jobs.
 - Also used as a cache for frequently accessed metadata and session‑like data to offload Postgres and speed up common queries. 
-- Again, production best practice is to use a managed Redis service rather than the bundled instance.
+ 
+Serves as the message broker between producers and workers:
+langsmith-platform-backend (and possibly langsmith-backend or others) enqueue jobs.
+langsmith-ingest-queue and langsmith-queue consume jobs.
+May also act as a cache for frequently accessed metadata, rate limiting, or ephemeral state, reducing load on Postgres and improving latency.
+
+## langsmith-clickhouse
+
+Role: Columnar analytics store for traces (OLAP).
+
+- Primary storage for high‑volume, append‑heavy trace data:
+  - Runs, spans, tokens, intermediate LLM calls, nested tools, etc.
+  - Metrics related to latency, token counts, costs, error codes, etc.
+- Optimized for analytical queries:
+  - Filtering and aggregating traces for dashboards and insights.
+  - Time‑series queries (latency over time, error rates, cost by model).
+  - Drill‑downs into specific runs while still supporting large volumes.
+- The write path:
+  - langsmith-platform-backend → langsmith-redis → langsmith-ingest-queue / langsmith-queue → write to ClickHouse.
+- The read path:
+  - langsmith-backend queries ClickHouse to serve trace and metrics data to the frontend.
+
+This is the observability warehouse for LangSmith.
