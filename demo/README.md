@@ -1,5 +1,6 @@
-## langsmith platform services
-### langsmith-frontend
+# LangSmith Platform Services
+
+## langsmith-frontend
 
 Role: UI and HTTPS entrypoint for LangSmith.
 
@@ -9,7 +10,7 @@ Role: UI and HTTPS entrypoint for LangSmith.
 
 Think of this as “the thing behind your load balancer” that users directly hit.
 
-### langsmith-backend
+## langsmith-backend
 
 Role: Read / query API and general app logic. Primarily responsible for serving data back to the UI and SDKs:
 
@@ -48,7 +49,7 @@ Role: Specialized worker(s) for trace ingestion.
 Role: General-purpose background worker service.
 
 - Implements the “queue service” that processes jobs from Redis and writes to storage. 
-- andles asynchronous tasks beyond pure ingestion, for example:
+- Handles asynchronous tasks beyond pure ingestion, for example:
   - Running evaluations / experiments in the background.
   - Aggregating metrics, computing rollups for dashboards.
   - Processing feedback, alerts, notifications, and other non‑interactive jobs. 
@@ -94,12 +95,7 @@ Role: Cache + job broker.
 - Serves as the message broker between producers and workers:
   - langsmith-platform-backend (and possibly langsmith-backend or others) enqueue jobs.
   - langsmith-ingest-queue and langsmith-queue consume jobs.
-- Also used as a cache for frequently accessed metadata and session‑like data to offload Postgres and speed up common queries. 
- 
-Serves as the message broker between producers and workers:
-langsmith-platform-backend (and possibly langsmith-backend or others) enqueue jobs.
-langsmith-ingest-queue and langsmith-queue consume jobs.
-May also act as a cache for frequently accessed metadata, rate limiting, or ephemeral state, reducing load on Postgres and improving latency.
+- Also used as a cache for frequently accessed metadata and session‑like data to offload Postgres and speed up common queries.
 
 ## langsmith-clickhouse
 
